@@ -1,10 +1,12 @@
 # Start mysql server using docker 
 
-* Build docker compose file
+* Clone the repo
 
-`docker-compose build`
+`git clone git@github.com:khawarhere/mysql-phpmyadmin-docker-compose.git'
 
-* Run docker compose to make app and db live
+* cd into root folder  
+
+* Buid and run docker compose to make db live
 
 `docker-compose up`
 
