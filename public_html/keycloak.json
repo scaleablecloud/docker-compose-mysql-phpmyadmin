@@ -1,7 +1,0 @@
-{
-  "realm": "dina",
-  "auth-server-url": "http://keycloak.accounts.dina-web.local:8083/auth",
-  "ssl-required": "all",
-  "resource": "dina-accounts-demo",
-  "public-client": true
-}
