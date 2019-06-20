@@ -2,6 +2,7 @@ version: "3"
 services:
     kmysql:
         image: mysql:5.7.22
+        restart: always
         ports:
             - 3306:3306
         environment:
@@ -13,6 +14,7 @@ services:
          - db_data:/var/lib/mysql
     kmyadmin:
         image: phpmyadmin/phpmyadmin
+        restart: always
         links:
             - kmysql:db
         ports:
