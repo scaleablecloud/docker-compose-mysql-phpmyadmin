@@ -6,10 +6,10 @@ services:
         ports:
             - 3306:3306
         environment:
-            MYSQL_DATABASE: kdbname
-            MYSQL_USER: kdbuser
-            MYSQL_PASSWORD: kdbpass
-            MYSQL_ROOT_PASSWORD: kdbpassroot
+            MYSQL_DATABASE: ${KDBNAME}
+            MYSQL_USER: ${KDBUSER}
+            MYSQL_PASSWORD: ${KDBPASS}
+            MYSQL_ROOT_PASSWORD: ${KDBPASSROOT}
         volumes:
          - db_data:/var/lib/mysql
     kmyadmin:
@@ -20,8 +20,8 @@ services:
         ports:
             - 83:80
         environment:
-            MYSQL_USER: kdbuser
-            MYSQL_PASSWORD: kdbpass
-            MYSQL_ROOT_PASSWORD: kdbpassroot
+            MYSQL_USER: ${KDBUSER}
+            MYSQL_PASSWORD: ${KDBPASS}
+            MYSQL_ROOT_PASSWORD: ${KDBPASSROOT}
 volumes:
     db_data: {}
