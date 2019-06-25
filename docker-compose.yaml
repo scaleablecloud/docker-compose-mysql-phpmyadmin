@@ -18,7 +18,7 @@ services:
         links:
             - kmysql:db
         ports:
-            - 83:80
+            - ${PORT_PMA}:80
         environment:
             MYSQL_USER: ${KDBUSER}
             MYSQL_PASSWORD: ${KDBPASS}

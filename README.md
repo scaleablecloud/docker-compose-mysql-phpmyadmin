@@ -8,7 +8,7 @@ git clone git@github.com:khawarhere/mysql-phpmyadmin-docker-compose.git
 
 * Buid and run docker compose to make db live
 
-`source setvalues.sh`
+* Set values in .env file
 
 `docker-compose up -d`
 
