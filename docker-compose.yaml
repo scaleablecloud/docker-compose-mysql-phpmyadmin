@@ -1,5 +1,10 @@
 version: "3"
 services:
+    my_custom_service:
+        image: orangehrm
+        restart: always
+        ports:
+            - 8080:80
     kmysql:
         image: mysql:5.7.22
         restart: always
